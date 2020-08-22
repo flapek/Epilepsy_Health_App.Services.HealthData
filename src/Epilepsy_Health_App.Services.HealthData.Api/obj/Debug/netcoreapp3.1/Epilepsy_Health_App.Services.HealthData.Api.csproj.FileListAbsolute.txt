@@ -1,0 +1,8 @@
+E:\Epilepsy_App_Project\Epilepsy_Health_App.Services.HealthData\src\Epilepsy_Health_App.Services.HealthData.Api\bin\Debug\netcoreapp3.1\appsettings.Development.json
+E:\Epilepsy_App_Project\Epilepsy_Health_App.Services.HealthData\src\Epilepsy_Health_App.Services.HealthData.Api\bin\Debug\netcoreapp3.1\appsettings.json
+E:\Epilepsy_App_Project\Epilepsy_Health_App.Services.HealthData\src\Epilepsy_Health_App.Services.HealthData.Api\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+E:\Epilepsy_App_Project\Epilepsy_Health_App.Services.HealthData\src\Epilepsy_Health_App.Services.HealthData.Api\obj\Debug\netcoreapp3.1\Epilepsy_Health_App.Services.HealthData.Api.AssemblyInfoInputs.cache
+E:\Epilepsy_App_Project\Epilepsy_Health_App.Services.HealthData\src\Epilepsy_Health_App.Services.HealthData.Api\obj\Debug\netcoreapp3.1\Epilepsy_Health_App.Services.HealthData.Api.AssemblyInfo.cs
+E:\Epilepsy_App_Project\Epilepsy_Health_App.Services.HealthData\src\Epilepsy_Health_App.Services.HealthData.Api\obj\Debug\netcoreapp3.1\Epilepsy_Health_App.Services.HealthData.Api.RazorTargetAssemblyInfo.cache
+E:\Epilepsy_App_Project\Epilepsy_Health_App.Services.HealthData\src\Epilepsy_Health_App.Services.HealthData.Api\obj\Debug\netcoreapp3.1\staticwebassets\Epilepsy_Health_App.Services.HealthData.Api.StaticWebAssets.Manifest.cache
+E:\Epilepsy_App_Project\Epilepsy_Health_App.Services.HealthData\src\Epilepsy_Health_App.Services.HealthData.Api\obj\Debug\netcoreapp3.1\staticwebassets\Epilepsy_Health_App.Services.HealthData.Api.StaticWebAssets.xml

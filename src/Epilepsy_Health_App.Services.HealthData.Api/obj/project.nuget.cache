@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "qbd3sRxg0iADJZ/UKCkhDjZnrfVsaMRCfEbFZfSN5hw/m3JV59yWv2PiFI0vvn9bBy+Vx7Jaxjx9dAtewxe/Ew==",
+  "success": true,
+  "projectFilePath": "E:\\Epilepsy_App_Project\\Epilepsy_Health_App.Services.HealthData\\src\\Epilepsy_Health_App.Services.HealthData.Api\\Epilepsy_Health_App.Services.HealthData.Api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\marcin.filapek\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
+  ],
+  "logs": []
+}
