@@ -56,3 +56,4 @@ E:\Epilepsy_App_Project\Epilepsy_Health_App.Services.HealthData\src\Epilepsy_Hea
 E:\Epilepsy_App_Project\Epilepsy_Health_App.Services.HealthData\src\Epilepsy_Health_App.Services.HealthData.Api\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 E:\Epilepsy_App_Project\Epilepsy_Health_App.Services.HealthData\src\Epilepsy_Health_App.Services.HealthData.Api\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
 E:\Epilepsy_App_Project\Epilepsy_Health_App.Services.HealthData\src\Epilepsy_Health_App.Services.HealthData.Api\bin\Debug\netcoreapp3.1\Scrutor.dll
+E:\Epilepsy_App_Project\Epilepsy_Health_App.Services.HealthData\src\Epilepsy_Health_App.Services.HealthData.Api\bin\Debug\netcoreapp3.1\Joint.Auth.dll
