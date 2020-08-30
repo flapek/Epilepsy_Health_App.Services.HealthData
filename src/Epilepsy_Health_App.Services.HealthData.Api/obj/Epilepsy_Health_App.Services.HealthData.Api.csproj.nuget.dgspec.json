@@ -42,9 +42,13 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "Convey": {
+            "Joint": {
               "target": "Package",
-              "version": "[0.4.344, )"
+              "version": "[0.0.24, )"
+            },
+            "Joint.Auth": {
+              "target": "Package",
+              "version": "[0.0.24, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -57,10 +61,6 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.10.9, )"
-            },
-            "SCL.Auth": {
-              "target": "Package",
-              "version": "[1.0.23082020, )"
             }
           },
           "imports": [

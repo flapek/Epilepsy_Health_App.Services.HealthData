@@ -2,22 +2,6 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "Convey/0.4.344": {
-        "type": "package",
-        "dependencies": {
-          "Figgle": "0.3.0",
-          "Scrutor": "3.2.1"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/Convey.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Convey.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
       "Figgle/0.3.0": {
         "type": "package",
         "dependencies": {
@@ -29,6 +13,35 @@
         },
         "runtime": {
           "lib/netstandard1.3/Figgle.dll": {}
+        }
+      },
+      "Joint/0.0.24": {
+        "type": "package",
+        "dependencies": {
+          "Figgle": "0.3.0",
+          "Scrutor": "3.2.1"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Joint.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Joint.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Joint.Auth/0.0.24": {
+        "type": "package",
+        "dependencies": {
+          "Joint": "0.0.24",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.7"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Joint.Auth.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Joint.Auth.dll": {}
         }
       },
       "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.7": {
@@ -453,19 +466,6 @@
             "assetType": "native",
             "rid": "ubuntu.16.10-x64"
           }
-        }
-      },
-      "SCL.Auth/1.0.23082020": {
-        "type": "package",
-        "dependencies": {
-          "Convey": "0.4.344",
-          "Microsoft.AspNetCore.Authentication.JwtBearer": "3.1.7"
-        },
-        "compile": {
-          "lib/netcoreapp3.1/SCL.Auth.cs.dll": {}
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/SCL.Auth.cs.dll": {}
         }
       },
       "Scrutor/3.2.1": {
@@ -1585,18 +1585,6 @@
     }
   },
   "libraries": {
-    "Convey/0.4.344": {
-      "sha512": "+ENT+FgVcr9riA8Zx1qT0h3uV5PqJQRyngHInaQncCrvmlo2BhzH/AY4/lEjb+rgxcx5/rXHnzgfi4GG9zinyg==",
-      "type": "package",
-      "path": "convey/0.4.344",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "convey.0.4.344.nupkg.sha512",
-        "convey.nuspec",
-        "lib/netcoreapp3.1/Convey.dll"
-      ]
-    },
     "Figgle/0.3.0": {
       "sha512": "jfS1fHB6UavaPk0meXqBr5ENtA+XVBPQtOJjSAoTwQfD6r08dTY4fTb/WMFUdnquvkRO5krIPOlOHTN+C9MkJw==",
       "type": "package",
@@ -1610,6 +1598,30 @@
         "lib/net45/Figgle.xml",
         "lib/netstandard1.3/Figgle.dll",
         "lib/netstandard1.3/Figgle.xml"
+      ]
+    },
+    "Joint/0.0.24": {
+      "sha512": "aFuKEJwWTp1C7JIuk8mgj6AE0jnAL2E463D+oEF9rAy0h2KIDs3g6mjzPy8WThMx1iGdhHHNlXzuMxZkp/vmWw==",
+      "type": "package",
+      "path": "joint/0.0.24",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "joint.0.0.24.nupkg.sha512",
+        "joint.nuspec",
+        "lib/netcoreapp3.1/Joint.dll"
+      ]
+    },
+    "Joint.Auth/0.0.24": {
+      "sha512": "EE23KyL4yt9KqC7vC2Z4V45zGu1UUBzeL+MFjuEYofPIzSvz6Lmyd/6JxbEQCAalGEnwEYJyMFbY2OPqDcbpfQ==",
+      "type": "package",
+      "path": "joint.auth/0.0.24",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "joint.auth.0.0.24.nupkg.sha512",
+        "joint.auth.nuspec",
+        "lib/netcoreapp3.1/Joint.Auth.dll"
       ]
     },
     "Microsoft.AspNetCore.Authentication.JwtBearer/3.1.7": {
@@ -2230,18 +2242,6 @@
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
         "runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.nuspec",
         "runtimes/ubuntu.16.10-x64/native/System.Security.Cryptography.Native.OpenSsl.so"
-      ]
-    },
-    "SCL.Auth/1.0.23082020": {
-      "sha512": "YA7ey8JC/YWSivLUh5IItWh+Aw2tuXTeEF+l7m5bYmKE2lZnhnxg2dXHDf+tNZdh0G7zcBOckHQBcWWbZoPEXQ==",
-      "type": "package",
-      "path": "scl.auth/1.0.23082020",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netcoreapp3.1/SCL.Auth.cs.dll",
-        "scl.auth.1.0.23082020.nupkg.sha512",
-        "scl.auth.nuspec"
       ]
     },
     "Scrutor/3.2.1": {
@@ -5725,11 +5725,11 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "Convey >= 0.4.344",
+      "Joint >= 0.0.24",
+      "Joint.Auth >= 0.0.24",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 3.1.7",
       "Microsoft.IdentityModel.Tokens >= 6.7.1",
-      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.10.9",
-      "SCL.Auth >= 1.0.23082020"
+      "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.10.9"
     ]
   },
   "packageFolders": {
@@ -5773,9 +5773,13 @@
     "frameworks": {
       "netcoreapp3.1": {
         "dependencies": {
-          "Convey": {
+          "Joint": {
             "target": "Package",
-            "version": "[0.4.344, )"
+            "version": "[0.0.24, )"
+          },
+          "Joint.Auth": {
+            "target": "Package",
+            "version": "[0.0.24, )"
           },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
@@ -5788,10 +5792,6 @@
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
             "target": "Package",
             "version": "[1.10.9, )"
-          },
-          "SCL.Auth": {
-            "target": "Package",
-            "version": "[1.0.23082020, )"
           }
         },
         "imports": [
