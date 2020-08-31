@@ -44,11 +44,19 @@
           "dependencies": {
             "Joint": {
               "target": "Package",
-              "version": "[0.0.24, )"
+              "version": "[0.0.35, )"
             },
             "Joint.Auth": {
               "target": "Package",
-              "version": "[0.0.24, )"
+              "version": "[0.0.35, )"
+            },
+            "Joint.Docs.Swagger": {
+              "target": "Package",
+              "version": "[0.0.35, )"
+            },
+            "Joint.Logging": {
+              "target": "Package",
+              "version": "[0.0.35, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
