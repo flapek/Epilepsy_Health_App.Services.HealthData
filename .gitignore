@@ -18,6 +18,21 @@ src/*/[Oo]bj/
 src/*/[Ll]og/
 src/*/[Ll]ogs/
 
+# test file
+test/*/[Dd]ebug/
+test/*/[Dd]ebugPublic/
+test/*/[Rr]elease/
+test/*/[Rr]eleases/
+test/*/x64/
+test/*/x86/
+test/*/[Aa][Rr][Mm]/
+test/*/[Aa][Rr][Mm]64/
+test/*/bld/
+test/*/[Bb]in/
+test/*/[Oo]bj/
+test/*/[Ll]og/
+test/*/[Ll]ogs/
+
 # User-specific files
 *.rsuser
 *.suo
