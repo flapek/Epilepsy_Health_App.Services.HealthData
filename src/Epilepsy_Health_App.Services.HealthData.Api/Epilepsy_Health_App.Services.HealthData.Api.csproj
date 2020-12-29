@@ -3,8 +3,9 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UserSecretsId>fd7c42b9-c9e6-4c8a-84fe-f27d47e776d1</UserSecretsId>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-    <DockerfileContext>..\..</DockerfileContext>
+    <NoWarn>$(NoWarn);1591</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -22,5 +23,5 @@
     <ProjectReference Include="..\Epilepsy_Health_App.Services.HealthData.Application\Epilepsy_Health_App.Services.HealthData.Application.csproj" />
     <ProjectReference Include="..\Epilepsy_Health_App.Services.HealthData.Infrastructure\Epilepsy_Health_App.Services.HealthData.Infrastructure.csproj" />
   </ItemGroup>
-
+  
 </Project>

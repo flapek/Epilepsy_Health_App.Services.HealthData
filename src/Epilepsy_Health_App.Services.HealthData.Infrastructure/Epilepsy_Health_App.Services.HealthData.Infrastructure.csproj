@@ -9,4 +9,11 @@
     <ProjectReference Include="..\Epilepsy_Health_App.Services.HealthData.Core\Epilepsy_Health_App.Services.HealthData.Core.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Joint" Version="0.1.169" />
+    <PackageReference Include="Joint.DB.Mongo" Version="0.1.7" />
+    <PackageReference Include="Joint.DB.Redis" Version="0.1.4" />
+    <PackageReference Include="Joint.Discovery.Consul" Version="0.0.154" />
+    <PackageReference Include="Joint.Exception" Version="0.1.3" />
+  </ItemGroup>
 </Project>
