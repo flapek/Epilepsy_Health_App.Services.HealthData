@@ -3,6 +3,21 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# src file
+src/*[Dd]ebug/
+src/*[Dd]ebugPublic/
+src/*[Rr]elease/
+src/*[Rr]eleases/
+src/*x64/
+src/*x86/
+src/*[Aa][Rr][Mm]/
+src/*[Aa][Rr][Mm]64/
+src/*bld/
+src/*[Bb]in/
+src/*[Oo]bj/
+src/*[Ll]og/
+src/*[Ll]ogs/
+
 # User-specific files
 *.rsuser
 *.suo
