@@ -11,6 +11,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EA433466-9
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epilepsy_Health_App.Services.HealthData.Unit.Test", "test\Epilepsy_Health_App.Services.HealthData.Unit.Test\Epilepsy_Health_App.Services.HealthData.Unit.Test.csproj", "{CA707E58-321E-4377-8E9C-0CCE1E22A0E7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epilepsy_Health_App.Services.HealthData.Application", "src\Epilepsy_Health_App.Services.HealthData.Application\Epilepsy_Health_App.Services.HealthData.Application.csproj", "{B77CBA94-F044-41E9-9171-2DA2B54D847E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epilepsy_Health_App.Services.HealthData.Core", "src\Epilepsy_Health_App.Services.HealthData.Core\Epilepsy_Health_App.Services.HealthData.Core.csproj", "{725A405A-2F65-4644-89CF-620A9B909C78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epilepsy_Health_App.Services.HealthData.Infrastructure", "src\Epilepsy_Health_App.Services.HealthData.Infrastructure\Epilepsy_Health_App.Services.HealthData.Infrastructure.csproj", "{E72114AE-F3BF-4B10-AE54-E18A99E3B1AC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +31,18 @@ Global
 		{CA707E58-321E-4377-8E9C-0CCE1E22A0E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA707E58-321E-4377-8E9C-0CCE1E22A0E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA707E58-321E-4377-8E9C-0CCE1E22A0E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B77CBA94-F044-41E9-9171-2DA2B54D847E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B77CBA94-F044-41E9-9171-2DA2B54D847E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B77CBA94-F044-41E9-9171-2DA2B54D847E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B77CBA94-F044-41E9-9171-2DA2B54D847E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{725A405A-2F65-4644-89CF-620A9B909C78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{725A405A-2F65-4644-89CF-620A9B909C78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{725A405A-2F65-4644-89CF-620A9B909C78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{725A405A-2F65-4644-89CF-620A9B909C78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E72114AE-F3BF-4B10-AE54-E18A99E3B1AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E72114AE-F3BF-4B10-AE54-E18A99E3B1AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E72114AE-F3BF-4B10-AE54-E18A99E3B1AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E72114AE-F3BF-4B10-AE54-E18A99E3B1AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +50,9 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{30D50CBC-663B-416D-9B30-ADF815620474} = {5A55B91D-6A0E-4822-A503-B8C9D01048E4}
 		{CA707E58-321E-4377-8E9C-0CCE1E22A0E7} = {EA433466-9B5B-4C94-A184-C24426D88641}
+		{B77CBA94-F044-41E9-9171-2DA2B54D847E} = {5A55B91D-6A0E-4822-A503-B8C9D01048E4}
+		{725A405A-2F65-4644-89CF-620A9B909C78} = {5A55B91D-6A0E-4822-A503-B8C9D01048E4}
+		{E72114AE-F3BF-4B10-AE54-E18A99E3B1AC} = {5A55B91D-6A0E-4822-A503-B8C9D01048E4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {006917CE-C54B-4C6B-832B-4BDA3AC02780}
