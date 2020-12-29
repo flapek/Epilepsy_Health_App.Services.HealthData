@@ -16,4 +16,8 @@
     <PackageReference Include="Joint.Discovery.Consul" Version="0.0.154" />
     <PackageReference Include="Joint.Exception" Version="0.1.3" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Mongo\Repositories\" />
+  </ItemGroup>
 </Project>
