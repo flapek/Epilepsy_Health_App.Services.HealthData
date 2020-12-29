@@ -5,7 +5,11 @@ VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5A55B91D-6A0E-4822-A503-B8C9D01048E4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epilepsy_Health_App.Services.HealthData.Api", "src\Epilepsy_Health_App.Services.HealthData.Api\Epilepsy_Health_App.Services.HealthData.Api.csproj", "{30D50CBC-663B-416D-9B30-ADF815620474}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Epilepsy_Health_App.Services.HealthData.Api", "src\Epilepsy_Health_App.Services.HealthData.Api\Epilepsy_Health_App.Services.HealthData.Api.csproj", "{30D50CBC-663B-416D-9B30-ADF815620474}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EA433466-9B5B-4C94-A184-C24426D88641}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Epilepsy_Health_App.Services.HealthData.Unit.Test", "test\Epilepsy_Health_App.Services.HealthData.Unit.Test\Epilepsy_Health_App.Services.HealthData.Unit.Test.csproj", "{CA707E58-321E-4377-8E9C-0CCE1E22A0E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +21,17 @@ Global
 		{30D50CBC-663B-416D-9B30-ADF815620474}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30D50CBC-663B-416D-9B30-ADF815620474}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30D50CBC-663B-416D-9B30-ADF815620474}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA707E58-321E-4377-8E9C-0CCE1E22A0E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA707E58-321E-4377-8E9C-0CCE1E22A0E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA707E58-321E-4377-8E9C-0CCE1E22A0E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA707E58-321E-4377-8E9C-0CCE1E22A0E7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{30D50CBC-663B-416D-9B30-ADF815620474} = {5A55B91D-6A0E-4822-A503-B8C9D01048E4}
+		{CA707E58-321E-4377-8E9C-0CCE1E22A0E7} = {EA433466-9B5B-4C94-A184-C24426D88641}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {006917CE-C54B-4C6B-832B-4BDA3AC02780}
