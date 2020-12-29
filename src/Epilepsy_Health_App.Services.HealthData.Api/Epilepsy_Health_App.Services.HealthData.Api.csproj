@@ -8,13 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Joint" Version="0.0.35" />
-    <PackageReference Include="Joint.Auth" Version="0.0.35" />
-    <PackageReference Include="Joint.Docs.Swagger" Version="0.0.35" />
-    <PackageReference Include="Joint.Logging" Version="0.0.35" />
-    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.7" />
-    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.7.1" />
-    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="Joint" Version="0.1.169" />
+    <PackageReference Include="Joint.Docs.Swagger" Version="0.1.3" />
+    <PackageReference Include="Joint.Logging" Version="0.1.5" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.10" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,9 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Epilepsy_Health_App.Services.HealthData.Application\Epilepsy_Health_App.Services.HealthData.Application.csproj" />
-    <ProjectReference Include="..\Epilepsy_Health_App.Services.HealthData.Core\Epilepsy_Health_App.Services.HealthData.Core.csproj" />
     <ProjectReference Include="..\Epilepsy_Health_App.Services.HealthData.Infrastructure\Epilepsy_Health_App.Services.HealthData.Infrastructure.csproj" />
   </ItemGroup>
-
 
 </Project>
