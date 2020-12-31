@@ -5,6 +5,7 @@ using Joint.CQRS.Commands;
 using Joint.CQRS.Queries;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Epilepsy_Health_App.Services.HealthData.Api.Controllers
@@ -30,7 +31,8 @@ namespace Epilepsy_Health_App.Services.HealthData.Api.Controllers
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> Get([FromQuery] GetPulseByFilter filter)
         {
-            return Ok();
+            filter.UserId = _claimsController.GetUserId(HttpContext.Request.Headers.FirstOrDefault(x => x.Key == "Authorization").Value);
+            return Ok(_queryDispatcher.QueryAsync(filter));
         }
     }
 }

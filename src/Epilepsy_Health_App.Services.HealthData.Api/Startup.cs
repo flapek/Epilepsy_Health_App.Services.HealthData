@@ -24,7 +24,7 @@ namespace Epilepsy_Health_App.Services.HealthData.Api
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers()
-               .AddNewtonsoftJson();
+               .AddNewtonsoftJson(options => options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddJoint()
                 .AddSwaggerDocs(Path.Combine(AppContext.BaseDirectory, $"{Assembly.GetExecutingAssembly().GetName().Name}.xml"))
                 .AddApplication()

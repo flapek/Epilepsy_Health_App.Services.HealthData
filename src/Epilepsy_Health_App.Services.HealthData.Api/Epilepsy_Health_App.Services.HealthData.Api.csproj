@@ -16,10 +16,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Epilepsy_Health_App.Services.HealthData.Application\Epilepsy_Health_App.Services.HealthData.Application.csproj" />
     <ProjectReference Include="..\Epilepsy_Health_App.Services.HealthData.Infrastructure\Epilepsy_Health_App.Services.HealthData.Infrastructure.csproj" />
   </ItemGroup>
