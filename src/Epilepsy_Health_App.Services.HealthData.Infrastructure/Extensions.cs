@@ -1,5 +1,6 @@
 ﻿using Epilepsy_Health_App.Services.HealthData.Infrastructure.Exceptions;
 using Epilepsy_Health_App.Services.HealthData.Infrastructure.Mongo;
+using Epilepsy_Health_App.Services.HealthData.Infrastructure.Mongo.Documents;
 using Joint;
 using Joint.Builders;
 using Joint.CQRS.Queries;
@@ -8,6 +9,7 @@ using Joint.DBRedis;
 using Joint.Discovery.Consul;
 using Joint.Exception;
 using Microsoft.AspNetCore.Builder;
+using System;
 
 namespace Epilepsy_Health_App.Services.HealthData.Infrastructure
 {
@@ -18,8 +20,7 @@ namespace Epilepsy_Health_App.Services.HealthData.Infrastructure
 
             return builder
                 .AddMongo()
-                //.AddMongoRepository<UserDocument, Guid>("users")
-                //.AddMongoRepository<RefreshTokenDocument, Guid>("refreshTokens")
+                .AddMongoRepository<PulseDocument, Guid>("pulse")
                 .AddRedis()
                 .AddConsul()
                 .AddErrorHandler<ExceptionToResponseMapper>()
