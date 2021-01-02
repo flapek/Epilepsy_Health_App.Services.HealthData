@@ -1,7 +1,5 @@
-﻿using Joint.CQRS.Commands;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Epilepsy_Health_App.Services.HealthData.Application.Repositories;
+using Joint.CQRS.Commands;
 using System.Threading.Tasks;
 
 namespace Epilepsy_Health_App.Services.HealthData.Application.Commands.Handlers
@@ -13,10 +11,7 @@ namespace Epilepsy_Health_App.Services.HealthData.Application.Commands.Handlers
         public AddPulseDataHandler(IPulseRepository pulseRepository) 
             => _pulseRepository = pulseRepository;
 
-        public async Task HandleAsync(AddPulseData command)
-        {
-            await _pulseRepository.Add(command);
-            throw new NotImplementedException();
-        }
+        public async Task HandleAsync(AddPulseData command) 
+            => await _pulseRepository.Add(command.UserId, command.PulseData);
     }
 }
