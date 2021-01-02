@@ -1,4 +1,5 @@
-﻿using Epilepsy_Health_App.Services.HealthData.Application.Controllers;
+﻿using Epilepsy_Health_App.Services.HealthData.Application.Commands;
+using Epilepsy_Health_App.Services.HealthData.Application.Controllers;
 using Epilepsy_Health_App.Services.HealthData.Application.Dtos;
 using Epilepsy_Health_App.Services.HealthData.Application.Queries;
 using Joint.CQRS.Commands;
@@ -32,7 +33,19 @@ namespace Epilepsy_Health_App.Services.HealthData.Api.Controllers
         public async Task<IActionResult> Get([FromQuery] GetPulseByFilter filter)
         {
             filter.UserId = _claimsController.GetUserId(HttpContext.Request.Headers.FirstOrDefault(x => x.Key == "Authorization").Value);
-            return Ok(_queryDispatcher.QueryAsync(filter));
+            return Ok(await _queryDispatcher.QueryAsync(filter));
         }
+
+        [HttpPost("data/add")]
+        [ProducesResponseType(StatusCodes.Status202Accepted)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<IActionResult> Add(AddPulseData command)
+        {
+            command.UserId = _claimsController.GetUserId(HttpContext.Request.Headers.FirstOrDefault(x => x.Key == "Authorization").Value);
+            await _commandDispatcher.SendAsync(command);
+            return Accepted();
+        }
+
+
     }
 }
