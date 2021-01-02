@@ -12,6 +12,6 @@ namespace Epilepsy_Health_App.Services.HealthData.Application.Commands.Handlers
             => _pulseRepository = pulseRepository;
 
         public async Task HandleAsync(AddPulseData command) 
-            => await _pulseRepository.Add(command.UserId, command.PulseData);
+            => await _pulseRepository.AddAsync(command.UserId, command.PulseData);
     }
 }

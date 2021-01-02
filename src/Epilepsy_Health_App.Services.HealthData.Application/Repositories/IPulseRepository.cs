@@ -9,7 +9,7 @@ namespace Epilepsy_Health_App.Services.HealthData.Application.Repositories
 {
     public interface IPulseRepository
     {
-        Task Add(Guid userId, IEnumerable<Pulse> pulses);
-        Task<PulsesDto> Get(IFilter filter);
+        Task<PulsesDto> GetAsync(IFilter filter);
+        Task AddAsync(Guid userId, IEnumerable<Pulse> pulses);
     }
 }
