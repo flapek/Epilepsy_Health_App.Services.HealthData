@@ -6,8 +6,8 @@ using Epilepsy_Health_App.Services.Identity.Infrastructure.Mongo.Documents;
 using Joint.DB.Mongo;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
-using System.Web.Http.Filters;
 
 namespace Epilepsy_Health_App.Services.HealthData.Infrastructure.Mongo.Repositories
 {
@@ -18,14 +18,25 @@ namespace Epilepsy_Health_App.Services.HealthData.Infrastructure.Mongo.Repositor
         public PulseRepository(IMongoRepository<PulseDocument, Guid> repository)
             => _repository = repository;
 
-        public async Task<PulsesDto> GetAsync(IFilter filter)
-        {
-            return (await _repository.FindAsync(x => true))?.AsEntity();
-        }
+        public async Task<PulsesDto> GetAsync(Guid userId, DateTime? from = null, DateTime? to = null) 
+            => (await _repository
+            .FindAsync(x => x.UserId == userId && (from.HasValue && to.HasValue)
+            ? x.CreatedAt >= from.Value && x.CreatedAt <= to.Value
+            : (from.HasValue && !to.HasValue
+            ? x.CreatedAt >= from.Value
+            : x.CreatedAt >= DateTime.UtcNow.AddDays(-7))))?.AsEntity();
 
         public Task AddAsync(Guid userId, IEnumerable<Pulse> pulses)
         {
-            throw new NotImplementedException();
+            pulses.Select(x => _repository.AddAsync(new PulseDocument
+            {
+                Id = Guid.NewGuid(),
+                UserId = userId,
+                CreatedAt = x.CreatedAt,
+                Value = x.Value
+            }));
+
+            return Task.CompletedTask;
         }
     }
 }
